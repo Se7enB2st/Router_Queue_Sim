@@ -75,19 +75,19 @@ Phase Analysis:
 ## 3. Impact of Buffer Size
 
 ### 3.1 Small Buffer (n=50)
-[Insert plot_l80_m50_n50.png]
+![small_buffer](/img/plot_l80_m50_n50.png)
 - Earlier onset of packet drops
 - Lower queuing delay
 - Higher drop rate
 
 ### 3.2 Medium Buffer (n=100)
-[Insert plot_l80_m50_n100.png]
+![medium_buffer](/img/plot_l80_m50_n100.png).
 - Balanced performance
 - Moderate queuing delay
 - Delayed onset of drops
 
 ### 3.3 Large Buffer (n=150)
-[Insert plot_l80_m50_n150.png]
+![large_buffer](/img/plot_l80_m50_n150.png)
 - Maximum protection against drops
 - Higher potential latency
 - Best burst absorption
