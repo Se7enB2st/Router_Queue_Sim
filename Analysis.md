@@ -21,7 +21,7 @@ The simulator implements a discrete event system modeling packet queuing behavio
 ## 2. Results Analysis
 
 ### 2.1 Stable Systems (λ < μ)
-[Insert plot_l30_m100_n50.png]
+![Figure 1](/img/plot_l30_m100_n50.png)
 **Figure 1:** Stable system behavior showing consistent low queue occupancy
 
 Key Characteristics:
@@ -31,11 +31,11 @@ Key Characteristics:
 - Buffer size has minimal impact
 
 Representative Cases:
-- λ=30, μ=100, n=50 [Insert zoom_l30_m100_n50.png]
-- λ=30, μ=120, n=50 [Insert plot_l30_m120_n50.png]
+- λ=30, μ=100, n=50 ![case 1](/img/zoom_l30_m100_n50.png)
+- λ=30, μ=120, n=50 ![case 2](/img/plot_l30_m120_n50.png)
 
 ### 2.2 Saturated Systems (λ > μ)
-[Insert plot_l120_m50_n50.png]
+![Figure 2](img/plot_l120_m50_n50.png)
 **Figure 2:** Saturated system showing queue overflow and packet drops
 
 Key Characteristics:
@@ -45,11 +45,11 @@ Key Characteristics:
 - Buffer size affects time to first drop
 
 Representative Cases:
-- λ=120, μ=50, n=50 [Insert zoom_l120_m50_n50.png]
-- λ=80, μ=50, n=50 [Insert plot_l80_m50_n50.png]
+- λ=120, μ=50, n=50 ![case 1](img/zoom_l120_m50_n50.png)
+- λ=80, μ=50, n=50 ![case 2](img/plot_l80_m50_n50.png)
 
 ### 2.3 Borderline Cases (λ ≈ μ)
-[Insert plot_l120_m120_n100.png]
+![Figure 3](/img/plot_l120_m120_n100.png)
 **Figure 3:** Borderline system showing dynamic equilibrium
 
 Key Characteristics:
@@ -58,15 +58,15 @@ Key Characteristics:
 - Buffer size significantly impacts performance
 
 Representative Case:
-- λ=120, μ=120, n=100 [Insert zoom_l120_m120_n100.png]
+- λ=120, μ=120, n=100 ![case 1](img/zoom_l120_m120_n100.png)
 
 ### 2.4 Variable Rate Scenario
-[Insert var_rate.png]
+![Figure 4](/img/var_rate.png)
 **Figure 4:** System response to varying arrival rates
 
 Phase Analysis:
 1. Initial Stable Phase (λ=70)
-   [Insert zoom_var_rate.png]
+   ![zoom_var_rate](/img/zoom_var_rate.png)
 2. Congestion Phase (λ=200)
 3. Transition Phase (λ=130)
 4. Equilibrium Phase (λ=120)
