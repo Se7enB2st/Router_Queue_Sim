@@ -13,8 +13,8 @@ The simulator implements a discrete event system modeling packet queuing behavio
 - Support for both fixed and variable arrival rates
 
 ### 1.2 Implementation Features
-- Handles 27 combinations of fixed rates (Table 1)
-- Supports variable rate scenario (Table 2)
+- Handles 27 combinations of fixed rates (Table A.1)
+- Supports variable rate scenario 
 - Generates normalized visualization of results
 - Provides detailed event logging and statistics
 
@@ -113,35 +113,35 @@ Phase Analysis:
 
 ### Table A.1: Performance Metrics for All Scenarios
 
-| λ  | μ   | n   | Max Queue | Time to First Drop | Total Drops | Utilization % | Pattern Group |
-|----|-----|-----|-----------|-------------------|-------------|---------------|---------------|
-| 30 | 50  | 50  | 12        | No drops          | 0           | 24%           | Stable        |
-| 30 | 50  | 100 | 12        | No drops          | 0           | 24%           | Stable        |
-| 30 | 50  | 150 | 12        | No drops          | 0           | 24%           | Stable        |
-| 30 | 100 | 50  | 8         | No drops          | 0           | 16%           | Stable        |
-| 30 | 100 | 100 | 8         | No drops          | 0           | 16%           | Stable        |
-| 30 | 100 | 150 | 8         | No drops          | 0           | 16%           | Stable        |
-| 30 | 120 | 50  | 7         | No drops          | 0           | 14%           | Stable        |
-| 30 | 120 | 100 | 7         | No drops          | 0           | 14%           | Stable        |
-| 30 | 120 | 150 | 7         | No drops          | 0           | 14%           | Stable        |
-| 80 | 50  | 50  | 50        | Event 219         | 227,819     | 100%          | Saturated     |
-| 80 | 50  | 100 | 100       | Event 438         | 227,580     | 100%          | Saturated     |
-| 80 | 50  | 150 | 150       | Event 657         | 227,341     | 100%          | Saturated     |
-| 80 | 100 | 50  | 42        | No drops          | 0           | 84%           | Stable        |
-| 80 | 100 | 100 | 42        | No drops          | 0           | 84%           | Stable        |
-| 80 | 100 | 150 | 42        | No drops          | 0           | 84%           | Stable        |
-| 80 | 120 | 50  | 35        | No drops          | 0           | 70%           | Stable        |
-| 80 | 120 | 100 | 35        | No drops          | 0           | 70%           | Stable        |
-| 80 | 120 | 150 | 35        | No drops          | 0           | 70%           | Stable        |
-| 120| 50  | 50  | 50        | Event 112         | 412,462     | 100%          | Saturated     |
-| 120| 50  | 100 | 100       | Event 219         | 412,223     | 100%          | Saturated     |
-| 120| 50  | 150 | 150       | Event 365         | 411,984     | 100%          | Saturated     |
-| 120| 100 | 50  | 50        | Event 438         | 154,254     | 100%          | Saturated     |
-| 120| 100 | 100 | 100       | Event 876         | 154,015     | 100%          | Saturated     |
-| 120| 100 | 150 | 150       | Event 1,314       | 153,776     | 100%          | Saturated     |
-| 120| 120 | 50  | 50        | Event 5,089       | 4,626       | 98%           | Borderline    |
-| 120| 120 | 100 | 98        | Event 10,178      | 4,387       | 98%           | Borderline    |
-| 120| 120 | 150 | 147       | Event 15,267      | 4,148       | 98%           | Borderline    |
+| λ  | μ   | n   | Max Queue | Time to First Drop | Total Drops | Utilization % | Pattern Group | Plot |
+|----|-----|-----|-----------|-------------------|-------------|---------------|---------------|--------------------------------------|
+| 30 | 50  | 50  | 12        | No drops          | 0           | 24%           | Stable        | ![plot](/img/plot_l30_m50_n50.png)   |
+| 30 | 50  | 100 | 12        | No drops          | 0           | 24%           | Stable        | ![plot](/img/plot_l30_m50_n100.png)  |
+| 30 | 50  | 150 | 12        | No drops          | 0           | 24%           | Stable        | ![plot](/img/plot_l30_m50_n150.png)  |
+| 30 | 100 | 50  | 8         | No drops          | 0           | 16%           | Stable        | ![plot](/img/plot_l30_m100_n50.png)  |
+| 30 | 100 | 100 | 8         | No drops          | 0           | 16%           | Stable        | ![plot](/img/plot_l30_m100_n100.png)  |
+| 30 | 100 | 150 | 8         | No drops          | 0           | 16%           | Stable        | ![plot](/img/plot_l30_m100_n150.png)  |
+| 30 | 120 | 50  | 7         | No drops          | 0           | 14%           | Stable        | ![plot](/img/plot_l30_m120_n50.png)  |
+| 30 | 120 | 100 | 7         | No drops          | 0           | 14%           | Stable        | ![plot](/img/plot_l30_m120_n100.png)  |
+| 30 | 120 | 150 | 7         | No drops          | 0           | 14%           | Stable        | ![plot](/img/plot_l30_m120_n150.png)  |
+| 80 | 50  | 50  | 50        | Event 219         | 227,819     | 100%          | Saturated     | ![plot](/img/plot_l80_m50_n50.png)  |
+| 80 | 50  | 100 | 100       | Event 438         | 227,580     | 100%          | Saturated     | ![plot](/img/plot_l80_m50_n100.png)  |
+| 80 | 50  | 150 | 150       | Event 657         | 227,341     | 100%          | Saturated     | ![plot](/img/plot_l80_m50_n150.png)  |
+| 80 | 100 | 50  | 42        | No drops          | 0           | 84%           | Stable        | ![plot](/img/plot_l80_m100_n50.png)  |
+| 80 | 100 | 100 | 42        | No drops          | 0           | 84%           | Stable        | ![plot](/img/plot_l80_m100_n100.png)  |
+| 80 | 100 | 150 | 42        | No drops          | 0           | 84%           | Stable        | ![plot](/img/plot_l80_m100_n150.png)  |
+| 80 | 120 | 50  | 35        | No drops          | 0           | 70%           | Stable        | ![plot](/img/plot_l80_m120_n50.png)  |
+| 80 | 120 | 100 | 35        | No drops          | 0           | 70%           | Stable        | ![plot](/img/plot_l80_m120_n100.png)  |
+| 80 | 120 | 150 | 35        | No drops          | 0           | 70%           | Stable        | ![plot](/img/plot_l80_m120_n150.png)  |
+| 120| 50  | 50  | 50        | Event 112         | 412,462     | 100%          | Saturated     | ![plot](/img/plot_l120_m50_n50.png)  |
+| 120| 50  | 100 | 100       | Event 219         | 412,223     | 100%          | Saturated     | ![plot](/img/plot_l120_m50_n100.png)  |
+| 120| 50  | 150 | 150       | Event 365         | 411,984     | 100%          | Saturated     | ![plot](/img/plot_l120_m50_n150.png)  |
+| 120| 100 | 50  | 50        | Event 438         | 154,254     | 100%          | Saturated     | ![plot](/img/plot_l120_m100_n50.png)  |
+| 120| 100 | 100 | 100       | Event 876         | 154,015     | 100%          | Saturated     | ![plot](/img/plot_l120_m100_n100.png)  |
+| 120| 100 | 150 | 150       | Event 1,314       | 153,776     | 100%          | Saturated     | ![plot](/img/plot_l120_m100_n150.png)  |
+| 120| 120 | 50  | 50        | Event 5,089       | 4,626       | 98%           | Borderline    | ![plot](/img/plot_l120_m120_n50.png)  |
+| 120| 120 | 100 | 98        | Event 10,178      | 4,387       | 98%           | Borderline    | ![plot](/img/plot_l120_m120_n100.png)  |
+| 120| 120 | 150 | 147       | Event 15,267      | 4,148       | 98%           | Borderline    | ![plot](/img/plot_l120_m120_n150.png)  |
 
 ### Variable Rate Scenario (μ=120, n=100)
 | Phase % | λ   | Max Queue | Drops/Phase | Utilization % |
