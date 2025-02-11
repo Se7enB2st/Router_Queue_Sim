@@ -1,5 +1,6 @@
 # Router Queue Simulation Analysis
 ##### TELCOM 2310 - Project 1
+##### [Github](https://github.com/Se7enB2st/Router_Queue_Sim)
 ##### Ethan He(Eth69@pitt.edu)
 
 ## 1. Implementation Description
